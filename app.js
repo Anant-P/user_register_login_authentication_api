@@ -26,6 +26,11 @@ const initializeDBAndServer = async (req, res) => {
 }
 initializeDBAndServer()
 
+// server side testing 
+app.get("/", (req, res)=>{
+  res.send("hiii")
+})
+
 // authUser
 
 const authUser = (req, res, next)=>{
@@ -102,3 +107,4 @@ app.post('/login/', async (req, res) => {
     }
   }
 })
+
